@@ -1,7 +1,18 @@
-pkg update && pkg upgrade
- pkg install python && pkg install python2
- pkg install git
- git clone https://github.com/slayer079/Cracko
-    cd Cracko
- bash setup.sh
- python run.py
+Information
+Type : "git kontol" For Updates Tools
+Method Crack https://mbasic.facebook.com
+Log in With Token And Cookie (anti checkpoint, don't use new account)
+Have Any Problem Login Token Please Check This : https://www.facebook.com/100015073506062/posts/1137297496782690/?app=fbl
+Read This
+ * This Script Is Not For Sale !! 
+ * Update Now Open Source And Free For You To Use 
+ * Dont Forget to Give Stars Bro
+
+ #Command
+  pkg install python2 git
+  pip2 install requests
+  git clone https://github.com/kontol999/Cracko
+  cd Cracko
+  python2 main.py
+
+
