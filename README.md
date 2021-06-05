@@ -11,8 +11,8 @@ Read This
  #Command
   pkg install python2 git
   pip2 install requests
-  git clone https://github.com/kontol999/Cracko
-  cd Cracko
-  python2 main.py
+  git clone https://github.com/kontol999/simbf8
+  cd simbf8
+  python2 run.py
 
 
