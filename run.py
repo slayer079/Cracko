@@ -364,9 +364,3 @@ def mochhi():
          exit()                   	
 
 if __name__=="__main__":
-     ikeh_ikeh_kimochi()
-     croot()
-     ikeh_ikeh_kimochi()
-     kontol()
-     slayer079()
-     yayanxd()
